@@ -1,0 +1,44 @@
+body {
+     background-image: url("./istockphoto-515606836-170667a.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+     font-size: 40px;
+     color: rgb(148, 145, 145);
+     margin-top: 30px;
+     margin-bottom: 15px;
+     font-weight: bold;
+}
+
+.label {
+     font-size: 19px;
+     margin-top: 20px;
+     font-weight: bold;
+     color: #0DCAF0;
+}
+
+.form-control {
+     background: none;
+     border: 0px;
+     border-radius: 0px;
+     border-bottom: 2px solid white;
+     font-size: 21px;
+     color: white;
+     margin-top: 10px;
+}
+
+.btn-info {
+     width: 100px;
+     font-size: 19px;
+     border-radius: 1000px;
+}
+
+.col-md-6 {
+     background: rgba(0, 0, 0, 0, 4);
+     height: auto;
+     box-shadow: -1px 1px 60px 10px black inset;
+}

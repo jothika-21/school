@@ -1,0 +1,58 @@
+.gradient-custom-3 {
+    background-image: url('./2314983.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #84fab0;
+
+}
+
+.gradient-custom-4 {
+    box-shadow: 5px 5px 5px 1px rgb(152, 153, 152);
+
+    background: #84fab0;
+
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+#fnameerror {
+    color: red;
+}
+
+#lnameerror {
+    color: red;
+}
+
+#emailerror {
+    color: red;
+}
+
+#passworderror {
+    color: red;
+}
+
+#confirmpassworderror {
+    color: red;
+}
+
+#FirstName {
+    box-shadow: 5px 5px 5px 2px rgb(211, 171, 211);
+}
+
+#LastName {
+    box-shadow: 5px 5px 5px 2px rgb(211, 171, 211);
+}
+
+#Email {
+    box-shadow: 5px 5px 5px 2px rgb(211, 171, 211);
+}
+
+#Password {
+    box-shadow: 5px 5px 5px 2px rgb(211, 171, 211);
+}
+
+#ConfirmPassword {
+    box-shadow: 5px 5px 5px 2px rgb(211, 171, 211);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="buildTable()">
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"><i
+                class='bx bxs-florist me-3' style='font-size: 42px; color:#0D6EFD'></i><a href=""
+                class="navbar-brand font-weight-bold text-secondary" style="font-size:50px;"> <span
+                    class="text-primary">KidKinder</span></a>
+
+            <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-expanded="false"><span
+                    class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0 me-2"><a href="http://127.0.0.1:5500/home.html"
+                        class="nav-item nav-link active fs-5 ms-4">Home</a>
+                </div>
+
+                <div class="btn-group nav-item nav-link">
+                    <button class="btn btn-light btn-sm dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Students
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/stable.html">Students Data</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/sform.html">Create Students Data</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group nav-item nav-link">
+                    <button class="btn btn-light btn-sm dropdown-toggle fs-5 me-2" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Teachers
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/ttable.html">Teachers Data</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/tform.html">Create Teachers Data</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group nav-item nav-link">
+                    <button class="btn btn-light btn-sm dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Workers
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/wtable.html">Workers List</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/wform.html">Create Workers Data</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-nav py-0 me-2"><a href="http://127.0.0.1:5500/login.html"
+                        class="nav-item nav-link active text-primary fs-5 ms-4">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <nav class="navbar navbar-light bg-light mt-5">
+        <div class="container">
+          <a class="navbar-brand fw-bold fs-4">Teachers Data</a>
+          <form class="d-flex">
+            <a href="http://127.0.0.1:5500/tform.html"><button class="btn btn-success" type="button"><i class='bx bx-plus pe-2' style='color:#efe7e7'  ></i>Create Teachers Data</button></a>
+          </form>
+        </div>
+      </nav>
+    <div class="container table-responsive-lg mt-5">
+        <table class="table table-hover">
+            <thead class=" table-dark">
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">DateOfBirth</th>
+                    <th scope="col">PhonerNo</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Qualification</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody id="myTable" class="table-success">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./tform.js"></script>
+
+</body>
+
+</html>
